@@ -1,0 +1,47 @@
+.img-box{
+	column-count: 4;
+	column-gap: 3px;
+	width: 80%;
+	max-width: 1400px;
+	margin: auto;
+}
+.image{
+
+max-width: 100%;
+display: block;
+margin: 3px;
+margin-bottom: 4px; 
+}
+.img-wrapper{
+	display: block;
+	opacity: 1;
+	transition: 0.4s;
+	filter:blur(10px);
+	filter: sepia(3);
+}
+
+.img-wrapper+.img-wrapper{
+
+	margin: 3px 0;
+}
+.img-wrapper:hover{
+	filter: blur(0px);
+	opacity: 0.5;}
+	@media all and (max-width: 1024px){
+
+
+
+		.img-box{
+			width: 90%
+			column-count:3;
+		}
+	}
+	@media all and (max-width: 768px){
+
+
+
+		.img-box{
+			width: 100%
+			column-count:2;
+		}
+	}
